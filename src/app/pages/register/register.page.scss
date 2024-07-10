@@ -1,0 +1,20 @@
+ion-radio{
+    width: 100%;
+    display: flex;
+}
+
+.center-full{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+ion-button{
+    margin: 10px;
+    width: 100%;
+}
+
+.header-success {
+    color: var(--ion-color-success);
+}
+
