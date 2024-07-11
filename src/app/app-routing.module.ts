@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'splas',
     loadChildren: () => import('./pages/splas/splas.module').then( m => m.SplasPageModule)
+  },
+  {
+    path: 'filesystem',
+    loadChildren: () => import('./pages/filesystem/filesystem.module').then( m => m.FilesystemPageModule)
   }
 ];
 
