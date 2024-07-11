@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'filesystem',
     loadChildren: () => import('./pages/filesystem/filesystem.module').then( m => m.FilesystemPageModule)
+  },
+  {
+    path: 'geolocation',
+    loadChildren: () => import('./pages/geolocation/geolocation.module').then( m => m.GeolocationPageModule)
   }
 ];
 
