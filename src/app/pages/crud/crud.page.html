@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Local Storage CRUD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-label>
+        <h2>{{ item.key }}</h2>
+        <p>{{ item.value }}</p>
+      </ion-label>
+      <ion-button color="danger" (click)="removeItem(item.key)">Delete</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input #newKey placeholder="Key" type="text"></ion-input>
+    <ion-input #newValue placeholder="Value" type="text"></ion-input>
+    <ion-button (click)="addItem(newKey.value!.toString(), newValue.value!.toString())">Add Item</ion-button>
+  </ion-item>
+</ion-content>

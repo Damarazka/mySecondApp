@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>preferences</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="savePreference()">Simpan Preference</ion-button>
+  <ion-button (click)="loadPreference()">Muat Preference</ion-button>
+  <ion-button (click)="deletePreference()">Hapus Preference</ion-button>
+  <ion-button (click)="clearAllPreferences()">Hapus Semua Preference</ion-button>
+</ion-content>
