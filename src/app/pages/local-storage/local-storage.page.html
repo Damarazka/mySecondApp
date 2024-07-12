@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>localStorage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="personName" placeholder="Enter Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="personEmail" placeholder="Enter Email"></ion-input>
+  </ion-item>
+
+  <ion-button size="small" color="success" (click)="setStorage()" fill="clear">setStorage</ion-button>
+  <ion-button size="small" color="success" (click)="getStorage()" fill="clear">getStorage</ion-button>
+  <ion-button size="small" color="success" (click)="updateStorage()" fill="clear">updateStorage</ion-button>
+  <ion-button size="small" color="success" (click)="deleteStorage()" fill="clear">deleteStorage</ion-button>
+  <ion-button size="small" color="success" (click)="clearStorage()" fill="clear">clearStorage</ion-button>
+
+  <ion-item>
+    Get localStorage theme : {{themeName}}
+  </ion-item>
+
+  <ion-item>
+    Get localStorage person : {{person.name}} : {{person.email}}
+  </ion-item>
+</div>
+</ion-content>

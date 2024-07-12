@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'preferences',
     loadChildren: () => import('./pages/preferences/preferences.module').then( m => m.PreferencesPageModule)
+  },
+  {
+    path: 'local-storage',
+    loadChildren: () => import('./pages/local-storage/local-storage.module').then( m => m.LocalStoragePageModule)
   }
 ];
 
