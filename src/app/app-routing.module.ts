@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'local-storage',
     loadChildren: () => import('./pages/local-storage/local-storage.module').then( m => m.LocalStoragePageModule)
+  },
+  {
+    path: 'crudtwo',
+    loadChildren: () => import('./pages/crudtwo/crudtwo.module').then( m => m.CrudtwoPageModule)
   }
 ];
 
